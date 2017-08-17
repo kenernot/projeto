@@ -14,6 +14,7 @@ type
     Estado1: TMenuItem;
     Cidade1: TMenuItem;
     Cliete1: TMenuItem;
+    Fechar1: TMenuItem;
     procedure Estado1Click(Sender: TObject);
     procedure Cidade1Click(Sender: TObject);
     procedure Cliete1Click(Sender: TObject);

@@ -32,5 +32,8 @@ object F_Principal: TF_Principal
         OnClick = Cliete1Click
       end
     end
+    object Fechar1: TMenuItem
+      Caption = 'Fechar'
+    end
   end
 end
