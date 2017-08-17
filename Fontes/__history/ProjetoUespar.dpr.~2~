@@ -1,0 +1,14 @@
+program ProjetoUespar;
+
+uses
+  Vcl.Forms,
+  u_modelo in 'u_modelo.pas' {F_Modelo};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TF_Modelo, F_Modelo);
+  Application.Run;
+end.

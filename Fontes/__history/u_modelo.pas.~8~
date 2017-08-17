@@ -1,0 +1,39 @@
+unit u_modelo;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.Buttons,
+  Vcl.StdCtrls;
+
+type
+  TF_Modelo = class(TForm)
+    Panel1: TPanel;
+    bt_inserir: TSpeedButton;
+    bt_salvar: TSpeedButton;
+    bt_cancelar: TSpeedButton;
+    bt_excluir: TSpeedButton;
+    bt_editar: TSpeedButton;
+    StatusBar1: TStatusBar;
+    TabControl1: TTabControl;
+    procedure bt_inserirClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  F_Modelo: TF_Modelo;
+
+implementation
+
+{$R *.dfm}
+
+procedure TF_Modelo.bt_inserirClick(Sender: TObject);
+begin
+  StatusBar1.Panels[0].Text := 'Inserindo Registro';
+end;
+
+end.
